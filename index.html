@@ -12,25 +12,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans+Condensed:300|Poiret+One|Quicksand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+
 <!--font-family: 'Poiret One', cursive;
     font-family: 'Open Sans Condensed', sans-serif;
     font-family: 'Quicksand', sans-serif;
     font-family: 'Dosis', sans-serif; 
-    font-family: 'Poiret One', cursive; letra do menu-->
+    font-family: 'Poiret One', cursive; letra do menu
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;-->
 
 <title>Website - La Visage</title> 
 
 </head>
 
 <body>
-  <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9" id="body">
+  <div class="col-xs-11 col-sm-11 col-md-9 col-lg-7" id="body">
   <!-- linha onde esta o logo. -->
   <div class="row" id="logoEMenu">
     <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9" id="divLogo">
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 logo"> <img src="fotos/logoLV.png" id=fotoLogo>
+          <div class="col-xs-9 col-sm-9 col-md-4 col-lg-4 logo"> <img src="fotos/logoLV.png" id=fotoLogo>
           </div>
     </div>
   </div>
+   <!-- container da barra de pesquisa. -->
+  <div class="row" >
+    <div class="col-xs-12 col-sm-12 containerBarraPesquisa">
+      <p class="col-xs-2 col-sm-22 barraPesquisa"><i class="barra fa fa-bars" onmouseover="menuaparece()" onmouseout="menufica()" onclick="menusome()" ></i></p>
+    </div>
+ </div>
   <div class="row" id="logoEMenu">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 divMenu">
         <ul class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="menu">
@@ -40,17 +51,7 @@
           <li class="col-xs-12 col-sm-12 "> <a href="contato.html" class="linkmenu">Contato </a></li>
         </ul> 
       </div>
-    </div>
-
-  
-
-
-  <!-- container da barra de pesquisa. -->
-  <div class="row" id="containerBarraPesquisa">
-    <div class="col-xs-12 col-sm-12">
-      <p class="col-xs-12 col-sm-12 barraPesquisa"><i class="barra fa fa-bars" onmouseover="menuaparece()" onmouseout="menufica()" onclick="menusome()" ></i></p>
-    </div>
- </div>
+    </div> 
 
    
 <header>   
@@ -90,25 +91,34 @@
   </div>
 </div>
 </main>
-
+<div class="separador col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <img src="fotos/separa3.png" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+</div>
     
 <footer>
   <div class="row">
-    <div class="boxInfo col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <p>
-        <a href="mailto:hello@your-email.com"class="email">hello@your-email.com</a>
-      </p>
+    <div class="linksContatoFooter col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <p >Fale Conosco</p>
+    </div>
+    <div class="social col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <ul class="socialIcons ">
+        <li>
+          <a href="" class="whatsappLink"><i class="fa fa-whatsapp"></i></a>
+        </li>
+        <li>
+          <a href="" class="facebookLink"> <i class="fa fa-facebook"></i></a>
+        </li>
+        <li>
+       <a href="" class="instagramLink"><i class="fa fa-instagram"></i></a>
 
-      <p>
-      <img src="fotos/whatslogo.png" id="wlogo">
-      <a href="https://api.whatsapp.com/send?phone=5511996990455" target="_blank">11 99699-0455</a>
-      </p>  
-         
-      <p>Av. Ibar 453, Poá, S.Paulo </p><br/><br/>
 
-      <p class="copyright">Copyright &#169; 2019 by Flavia Camargo</p>
+        </li>
+      </ul>
+
+    
     </div>
   </div>
+
 
   </footer> 
 
@@ -126,6 +136,6 @@
       document.getElementById("menu").style.display = "none";
   }
 </script>
-
+</div>
 </body>
 </html>
